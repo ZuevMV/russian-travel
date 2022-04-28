@@ -6,6 +6,12 @@ html body {
 .page {
     font-family: 'Inter', Arial, sans-serif;
     color: #ffffff;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
 }
 
 .header {
@@ -151,7 +157,7 @@ html body {
     padding: 0;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
     gap: 16px;
     object-fit: cover;
     object-position: center;
@@ -350,6 +356,7 @@ a:hover {
     }
 
     .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 14px;
     }
 
@@ -372,107 +379,78 @@ a:hover {
 }
 
 @media all and (max-width: 968px) {
+    
     .header {
-        max-width: calc(100% - 24px);
+        max-width: calc(100% - 48px);
     }
 
     .lead {
         max-width: 100%;
-        margin-top: 48px;
     }
 
     .lead__image {
-        max-height: 480px;
-        margin-top: 56px;
+        min-height: 480px;
+    }
+
+    .lead__caption {
+        margin-left: 24px;
     }
 
     .intro {
-        max-width: 768px;
+        max-width: calc(100% - 48px);
         margin-top: 88px;
     }
 
     .fotogallery {
-        max-width: 720px;
+        max-width: calc(100% - 48px);
         margin-top: 88px;
     }
 
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
+        gap: 16px;
+    }
+
     .places {
-        max-width: 720px;
+        max-width: calc(100% - 48px);
     }
 
     .place {
         grid-template-columns: 340px 340px;
-        column-gap: 28px;
+        gap: 28px;
+        margin-bottom: 72px;
+    }
+
+    .place__title {
+        font-size: 42px;
+        line-height: 1.1;
+        font-weight: 900;
+        border: 1px solid red;
+    }
+    
+    .place__text {
+        font-size: 16px;
+    }
+    
+    .place__text_bottom {
+        margin-top: 25px;
     }
 
     .cover {
-        aspect-ratio: 16\10;
-        min-width: 768px;
-        min-height: 480px;
-        margin: 10px, 88px, 0;
+        margin-top: 18px;
+        margin-bottom: 88px;
     }
 
     .footer {
-        max-width: 720px;
+        max-width: calc(100% - 48px);
     }
 }
 
-@media all and (max-width: 712px) {
-    .header {
-        max-width: calc(100% - 32px);
-        margin-top: 16px;
-        align-items: flex-end;
-    }
-
-    .lead {
-        max-width: 100%;
-        min-width: 320px;
-        margin-top: 48px;
-    }
-
-    .lead__title {
-        max-width: 288px;
-        font-size: 40px;
-        line-height: 44px;
-    }
+@media all and (max-width: 720px) {
     
-    .lead__subtitle {
-        max-width: 288px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .lead__image {
-        min-height: 200px;
-        margin-top: 40px;
-    }
-
-    .lead__caption {
-        margin-left: 16px;
-    }
-
-    .intro {
-        max-width: 288px;
-        margin-top: 64px;
-    }
-        
-    .intro__title {
-        max-width: 288px;
-        font-size: 32px;
-        line-height: 35px;
-    }
-
-    .intro__text {
-        max-width: 288px;
-    }
-
-    .fotogallery {
-        max-width: 288px;
-        margin-top: 64px;
-    }
-
     .places {
-        max-width: 320px;
+        width: 100%;
+        margin: 0;
         margin-top: 64px;
     }
 
@@ -483,37 +461,157 @@ a:hover {
     }
 
     .place__title {
+        margin-left: 16px;
+        margin-right: 16px;
         font-size: 32px;
-        line-height: 35px;
-        margin: 0px 16px;
+        line-height: 1.1;
     }
 
     .place__website {
-        margin: 0px 16px 12px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .place__website_link {
         margin: 0;
+        margin-top: 12px;
+    }
+
+    .place__image {
+        min-width: 320px;
     }
 
     .place__text {
-        font-size: 16px;
-        line-height: 26px;
         margin: 0px 16px;
     }
 
-    .place__text_bottom {
-        margin-top: 25px;
+    .footer {
+        width: 100%;
+        margin: 0 16px 24px;
+        flex-direction: column;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer__link {
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 1;
+    }
+    
+    .footer__copyright {
+        margin-top: 16px;
+    }
+}
+
+@media all and (max-width: 625px) {
+   
+    .lead__title {
+        font-size: 60px;
+    }
+    
+    .lead__subtitle {
+        font-size: 22px;
+    }
+
+    .cover__title {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+    
+    .cover__subtitle {
+        font-size: 16px;
+        line-height: 1.14;
+    }
+
+}
+
+
+@media all and (max-width: 425px) {
+    .header {
+        max-width: calc(100% - 32px);
+        margin-top: 16px;
+        align-items: flex-end;
+    }
+
+    .lead__title {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    
+    .lead__subtitle {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .lead__image {
+        min-height: 200px;
+        margin-top: 40px;
+    }
+
+    .lead__caption {
+        margin-left: 16px;
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .intro {
+        max-width: calc(100% - 32px);
+        margin-top: 64px;
+    }
+        
+    .intro__title {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .fotogallery {
+        max-width: calc(100% - 32px);
+        margin-top: 64px;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+        gap: 12px;
     }
 
     .cover {
-        aspect-ratio: 16\10;
-        min-width: 320px;
-        min-height: 200px;
-        margin: 16px, 64px, 0;
+        margin-top: 16px;
+        margin-bottom: 64px;
+    }
+
+    .cover__title {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+    
+    .cover__subtitle {
+        font-size: 14px;
+        line-height: 1.14;
     }
 
     .footer {
-        max-width: 720px;
+        width: 100%;
+        margin: 0 16px 24px;
+        flex-direction: column;
     }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer__link {
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 1;
+    }
+    
+    .footer__copyright {
+        margin-top: 16px;
+    }
+
 }
