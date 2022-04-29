@@ -1,0 +1,28 @@
+.cover {
+  max-width: calc(100% - 96px);
+  aspect-ratio: 16/10;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 92px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1224px) {
+  .cover {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 968px) {
+  .cover {
+    margin-top: 18px;
+    margin-bottom: 88px;
+  }
+}
+
+@media all and (max-width: 442px) {
+  .cover {
+    margin-top: 16px;
+    margin-bottom: 64px;
+  }
+}
