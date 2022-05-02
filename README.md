@@ -22,4 +22,7 @@
 * 768px,
 * 320px.
 
+[Ссылка на проект](https://zuevmv.github.io/russian-travel/).
+
+
 Всем респект!!!
