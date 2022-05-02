@@ -14,3 +14,10 @@
   opacity: 80%;
   transition: opacity 2s ease;
 }
+
+@media all and (width: 750px) {
+  .header__link {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}

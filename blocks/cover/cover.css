@@ -1,5 +1,6 @@
 .cover {
-  max-width: calc(100% - 96px);
+  width: 100%;
+  max-width: 1184px;
   margin: auto;
   margin-top: 12px;
   margin-bottom: 92px;
@@ -20,7 +21,6 @@
 
 @media all and (max-width: 442px) {
   .cover {
-    margin-top: 16px;
     margin-bottom: 64px;
   }
 }

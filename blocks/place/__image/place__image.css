@@ -1,9 +1,21 @@
 .place__image {
-  width: 100%;
+  width: 460px;
+}
+
+@media screen and (max-width: 1224px) {
+  .place__image {
+    width: 440px;
+  }
+}
+
+@media all and (max-width: 968px) {
+  .place__image {
+    width: 340px;
+  }
 }
 
 @media all and (max-width: 750px) {
   .place__image {
-    min-width: 320px;
+    width: 320px;
   }
 }
