@@ -1,10 +1,7 @@
-html body {
-  width: 100%;
-  background-color: #2a2c2f;
-}
-
 .page {
+  width: 100%;
   margin: auto;
+  background-color: #2a2c2f;
   font-family: "Inter", Arial, sans-serif;
   color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
@@ -13,16 +10,4 @@ html body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  opacity: 80%;
-  transition: opacity 2s ease;
 }

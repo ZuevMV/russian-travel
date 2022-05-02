@@ -1,9 +1,0 @@
-.place__text_bottom {
-  margin-top: 26px;
-}
-
-@media all and (max-width: 968px) {
-  .place__text_bottom {
-    margin-top: 25px;
-  }
-}
