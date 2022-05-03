@@ -7,7 +7,6 @@
 
 @media all and (max-width: 750px) {
   .footer__links {
-    display: flex;
     flex-direction: column;
   }
 }
