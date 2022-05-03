@@ -8,6 +8,12 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1224px) {
+  .header {
+    max-width: calc(100% - 96px);
+  }
+}
+
 @media all and (max-width: 968px) {
   .header {
     max-width: calc(100% - 48px);
@@ -18,6 +24,5 @@
   .header {
     max-width: calc(100% - 32px);
     margin-top: 16px;
-    align-items: flex-end;
   }
 }

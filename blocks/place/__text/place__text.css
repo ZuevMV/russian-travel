@@ -23,6 +23,7 @@
 @media all and (max-width: 750px) {
   .place__text {
     max-width: 90%;
+    margin: auto;
     margin: 0px 16px;
   }
 }

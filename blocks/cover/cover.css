@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1184px;
   margin: auto;
-  margin-top: 12px;
+  margin-top: 92px;
   margin-bottom: 92px;
 }
 
@@ -14,13 +14,14 @@
 
 @media all and (max-width: 968px) {
   .cover {
-    margin-top: 18px;
+    margin-top: 90px;
     margin-bottom: 88px;
   }
 }
 
 @media all and (max-width: 442px) {
   .cover {
+    margin-top: 66px;
     margin-bottom: 64px;
   }
 }

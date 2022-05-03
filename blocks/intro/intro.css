@@ -14,7 +14,7 @@
 
 @media all and (max-width: 968px) {
   .intro {
-    max-width: 720px;
+    max-width: calc(100% - 48px);
     margin-top: 88px;
   }
 }
