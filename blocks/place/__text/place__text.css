@@ -24,6 +24,6 @@
   .place__text {
     max-width: 90%;
     margin: auto;
-    margin: 0px 16px;
+    margin: 25px 16px 0px;
   }
 }

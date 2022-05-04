@@ -1,0 +1,10 @@
+.footer__link-section {
+  margin: 0;
+  margin-right: 18px;
+}
+
+@media all and (max-width: 750px) {
+  .footer__link-section {
+    margin-bottom: 32px;
+  }
+}
