@@ -13,13 +13,13 @@
 @media all and (max-width: 968px) {
   .intro {
     max-width: calc(100% - 48px);
-    margin-top: 88px;
+    margin: 88px 24px 0px;
   }
 }
 
 @media all and (max-width: 442px) {
   .intro {
     max-width: calc(100% - 32px);
-    margin-top: 64px;
+    margin: 64px 16px 0px;
   }
 }
