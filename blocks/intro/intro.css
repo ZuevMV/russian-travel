@@ -1,20 +1,21 @@
 .intro {
   width: 100%;
-  max-width: 690px;
+  max-width: 984px;
   margin: auto;
-  margin: 92px 148px 0px;
+  margin-top: 92px;
 }
 
-@media screen and (max-width: 1224px) {
+@media all and (max-width: 1224px) {
   .intro {
-    margin: 92px 48px 0px;
+    max-width: 928px;
   }
 }
 
 @media all and (max-width: 968px) {
   .intro {
     max-width: calc(100% - 48px);
-    margin: 88px 24px 0px;
+    margin-top: 88px 24px 0px;
+    overflow: hidden;
   }
 }
 
